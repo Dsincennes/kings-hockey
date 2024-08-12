@@ -1,6 +1,3 @@
-/* import bootstrap to set changes */
-@import "../node_modules/bootstrap/scss/bootstrap";
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -15,6 +12,7 @@ code {
     monospace;
 }
 
+
 /* make the customizations */
 $theme-colors: (
   "primary": purple,
@@ -23,3 +21,6 @@ $theme-colors: (
   "danger": teal
 );
 
+
+/* import bootstrap to set changes */
+@import '~bootstrap/scss/bootstrap';
