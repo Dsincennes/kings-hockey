@@ -1,0 +1,15 @@
+.footer {
+  background-color: rgb(94, 2, 94);
+  padding: 20px 0;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  z-index: 1000; /* Ensure it stays above other content */
+}
+  
+  .footer .text-center {
+    margin: 0;
+    color: yellow;
+    font-size: 18px;
+    font-weight: bold;
+  }

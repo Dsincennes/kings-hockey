@@ -1,17 +1,19 @@
-@import "../../index"; 
-
 .navbar {
-    background-color: map-get($theme-colors, "primary") !important; // Set background to primary color
+    background-color: rgb(94, 2, 94); // Set background to primary color
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it stays above other content */
     .navbar-brand, .nav-link {
-      color: map-get($theme-colors, "secondary") !important; // Set text color to secondary color
+      color: yellow;
     }
   
     // Optional: Change color on hover
     .navbar-brand:hover, .nav-link:hover {
-      color: darken(map-get($theme-colors, "secondary"), 10%) !important;
+      color: yellow;
     }
   
     .navbar-toggler {
-      border-color: map-get($theme-colors, "secondary") !important;
+      border-color:yellow;
     }
   }

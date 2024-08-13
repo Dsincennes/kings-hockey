@@ -1,19 +1,29 @@
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Header from './components/Header';
-import Button from 'react-bootstrap/Button';
+import Footer from './components/Footer';
+import Calendar from './components/Calendar';
+import GamePage from './components/GamePage';
+import Home from './pages/Home';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <img src="/gav.jpg" alt="gav-png" width="auto" height={600} />
-      <img src="/dom.jpg" alt="gav-png" width="auto" height={600} />
-      <h1>Kings</h1>
-      <button className="btn btn-primary">Primary Button</button>
-      <br></br>
-      <br></br>
-      <Button>Testing</Button>
-      <Button variant='primary'>test</Button>
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+        <div className="container" style={{ minHeight: '100vh', paddingTop: '70px', paddingBottom: '60px' }}>
+          <Routes>
+            <Route
+              path="/"
+              element={<Home />}
+            />
+            <Route path="/calendar" element={<Calendar />} />
+            <Route path="/game/:gameId" element={<GamePage />}/>
+          </Routes>
+        </div>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

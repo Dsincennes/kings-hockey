@@ -1,0 +1,67 @@
+.calendar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+  }
+  
+  .month {
+    margin-bottom: 20px;
+  }
+  
+  .month-header {
+    background-color: #343a40;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+  }
+  
+  .month-header:hover {
+    background-color: #495057;
+  }
+  
+  .toggle-icon {
+    font-size: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #dee2e6;
+  }
+  
+  th {
+    background-color: #6c757d;
+    color: white;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f1f1f1;
+  }
+  
+  tbody tr:hover {
+    background-color: #ddd;
+  }
+  
+  .game-link {
+    text-decoration: none;
+    color: inherit; /* Preserve the text color and styling */
+    display: block; /* Make the link cover the entire cell */
+  }
+  
+  .game-link:hover {
+    text-decoration: underline;
+  }
+  
