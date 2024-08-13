@@ -56,12 +56,12 @@
   }
   
   .game-link {
+    display: contents; /* Ensures that the link does not disrupt the table layout */
     text-decoration: none;
-    color: inherit; /* Preserve the text color and styling */
-    display: block; /* Make the link cover the entire cell */
+    color: inherit;
   }
   
-  .game-link:hover {
-    text-decoration: underline;
+  .game-link:hover td {
+    background-color: #e2e6ea;
   }
   

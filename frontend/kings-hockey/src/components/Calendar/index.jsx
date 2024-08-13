@@ -208,31 +208,13 @@ const Calendar = () => {
               <tbody>
                 {monthData.matches.map((match) => (
                   <tr key={match.id}>
-                    <td>
-                      <Link to={`/game/${match.id}`} className="game-link">
-                        {match.home}
-                      </Link>
-                    </td>
-                    <td>
-                      <Link to={`/game/${match.id}`} className="game-link">
-                        {match.away}
-                      </Link>
-                    </td>
-                    <td>
-                      <Link to={`/game/${match.id}`} className="game-link">
-                        {match.date}
-                      </Link>
-                    </td>
-                    <td>
-                      <Link to={`/game/${match.id}`} className="game-link">
-                        {match.time}
-                      </Link>
-                    </td>
-                    <td>
-                      <Link to={`/game/${match.id}`} className="game-link">
-                        {match.location}
-                      </Link>
-                    </td>
+                    <Link to={`/game/${match.id}`} className="game-link">
+                      <td>{match.home}</td>
+                      <td>{match.away}</td>
+                      <td>{match.date}</td>
+                      <td>{match.time}</td>
+                      <td>{match.location}</td>
+                    </Link>
                   </tr>
                 ))}
               </tbody>
